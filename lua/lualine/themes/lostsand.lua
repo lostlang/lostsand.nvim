@@ -19,7 +19,7 @@ local lostsand = {
 		a = { bg = p.aqua, fg = p.light_white },
 	},
 	terminal = {
-		a = { bg = p.light_blue, fg = p.black },
+		a = { bg = p.light_blue, fg = p.light_white },
 	},
 	inactive = {
 		a = { bg = p.light_white, fg = p.light_black },
