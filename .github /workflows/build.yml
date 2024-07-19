@@ -1,7 +1,7 @@
 on: [release]
 
 jobs:
-  hashing:
+  release:
     - uses: MCJack123/ghaction-generate-release-hashes@v4
       with:
         hash-type: sha256
