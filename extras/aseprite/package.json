@@ -1,0 +1,12 @@
+{
+	"name": "lostsand",
+	"displayName": "Lostsand",
+	"description": "Palettes contributed by Lostlang",
+	"version": "0.2",
+	"author": { "name": "Lostlang", "url": "https://github.com/lostlang" },
+	"publisher": "lostlang",
+	"categories": ["Palettes"],
+	"contributes": {
+		"palettes": [{ "id": "lostsand", "path": "./lostsand.gpl" }]
+	}
+}

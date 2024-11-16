@@ -1,0 +1,33 @@
+GIMP Palette
+#
+# by Lostlang
+#
+226 111 111	Light_red
+174  38  38	Red
+234 119  66	Light_orange
+168  70  11	Orange
+225 186  63	Light_yellow
+155 131  24	Yellow
+146 198  84	Light_green
+ 67 127   6	Green
+ 73 171 119	Light_aqua
+ 11 140  95	Aqua
+ 37 125 199	Light_blue
+ 35  86 159	Blue
+180 124 192	Light_purple
+153  18 148	Purple
+249 240 210	Light_gray_0
+237 223 191	Light_gray_1
+212 185 121	Light_gray_2
+185 141  86	Light_gray_3
+140  90  62	Light_gray_4
+ 37  55  58	Light_gray_5
+ 10  26  29	Light_gray_6
+230 209 163	Dark_gray-0
+218 185 124	Dark_gray_1
+167 138  94	Dark_gray_2
+140 106  70	Dark_gray_3
+ 93  58  57	Dark_gray_4
+ 16   7  43	Dark_gray_5
+ 11   0  20	Dark_gray_6
+

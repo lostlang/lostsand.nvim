@@ -1,0 +1,32 @@
+plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+	format_left   "#[bg=#437F06,fg=#EDDFBF]{mode}#[bg=#A78A5E,fg=#437F06]#[bg=#A78A5E,fg=#EDDFBF,bold] {session} #[fg=#A78A5E]{command_git_branch}"
+	format_center " {tabs} "
+	format_right  "{datetime}"
+
+	mode_normal        " {name} "
+	mode_locked        " {name} "
+	mode_resize        " {name} "
+	mode_pane          " {name} "
+	mode_tab           " {name} "
+	mode_scroll        " {name} "
+	mode_enter_search  " {name} "
+	mode_search        " {name} "
+	mode_rename_tab    " {name} "
+	mode_rename_pane   " {name} "
+	mode_session       " {name} "
+	mode_move          " {name} "
+	mode_prompt        " {name} "
+	mode_tmux          " {name} "
+
+	tab_normal   "#[fg=#257DC7] {name} "
+	tab_active   "#[fg=#23569F,bold,italic] {name} "
+
+	command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
+	command_git_branch_format      "#[fg=#23569F]  {stdout} "
+	command_git_branch_interval    "10"
+	command_git_branch_rendermode  "static"
+
+	datetime "#[bg=#EDDFBF,fg=#437F06]#[bg=#437F06,fg=#EDDFBF] {format} "
+	datetime_format "%A, %H:%M"
+	datetime_timezone "Asia/Almaty"
+}

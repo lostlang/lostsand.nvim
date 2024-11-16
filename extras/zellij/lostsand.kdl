@@ -1,0 +1,29 @@
+themes {
+	lostsand {
+		fg "#437F06"
+		bg "#DAB97C"
+		white "#10072B"
+		red "#EDDFBF"
+		orange "#A8460B"
+		yellow "#9B8318"
+		green "#437F06"
+		cyan "#0B8C5F"
+		blue "#23569F"
+		magenta "#991294"
+		black "#EDDFBF"
+	}
+
+	lostsand-true-color {
+		fg "#10072B"
+		bg "#EDDFBF"
+		white "#DAB97C"
+		red "#AE2626"
+		orange "#A8460B"
+		yellow "#9B8318"
+		green "#437F06"
+		cyan "#0B8C5F"
+		blue "#23569F"
+		magenta "#991294"
+		black "#10072B"
+	}
+}
