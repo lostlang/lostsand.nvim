@@ -71,7 +71,7 @@ M.highlights = {
 	String = { fg = p.blue },
 	Number = { fg = p.light_blue },
 	Function = { fg = p.green } + styles.functions,
-	Title = { fg = p.yellow },
+	Title = { fg = p.blue },
 	Comment = { fg = p.light_blue } + styles.comments,
 	SpecialComment = { fg = p.light_blue } + styles.comments,
 	Todo = { fg = p.blue } + styles.comments,
@@ -126,8 +126,6 @@ M.highlights = {
 	["@keyword.repeat"] = { link = "Repeat" },
 	["@keyword.storage"] = { link = "StorageClass" },
 	["@string"] = { link = "String" },
-	["@markup.link.label"] = { link = "SpecialChar" },
-	["@markup.link.label.symbol"] = { link = "Identifier" },
 	["@tag"] = { link = "Label" },
 	["@tag.attribute"] = { link = "@property" },
 	["@tag.delimiter"] = { link = "Delimiter" },
@@ -148,9 +146,13 @@ M.highlights = {
 	["@comment.warning"] = { fg = p.light_orange },
 	["@comment.todo"] = { fg = p.light_blue },
 	["@markup.link.url"] = { link = "Underlined" },
+	["@markup.link.label"] = { fg = p.light_blue },
+	["@markup.link.label.symbol"] = { link = "@markup.link.label" },
 	["@type"] = { link = "Type" },
 	["@type.definition"] = { link = "Typedef" },
 	["@type.qualifier"] = { link = "@keyword" },
+	["@markup.list.unchecked"] = { fg = p.palette_dark.g3 },
+	["@markup.list.checked"] = { fg = p.light_aqua },
 
 	-- cmp
 	CmpItemKindDefault = { fg = p.blue },
@@ -208,7 +210,7 @@ M.highlights = {
 	GitSignsDelete = { fg = p.red },
 	GitSignsStageAdd = { fg = p.green },
 
-	-- todo
+	-- todo-comments
 	TodoBgTODO = { fg = p.light_white, bg = p.blue },
 	TodoFgTODO = { link = "Todo" },
 	TodoSignTODO = { link = "TodoFgTODO" },
@@ -242,6 +244,17 @@ M.highlights = {
 	NeoTreeFileStatsHeader = { link = "NeoTreeFadeText1" },
 	NeoTreeFileStats = { link = "NeoTreeFadeText1" },
 	NeoTreeGitUntracked = { fg = p.aqua, italic = true },
+
+	-- render-markdown
+	RenderMarkdownCode = { bg = p.palette_dark.g0 },
+	RenderMarkdownLink = { fg = p.light_blue },
+	RenderMarkdownCustomCheckboxTest = { link = "TodoFgTEST" },
+	RenderMarkdownH1Bg = { fg = p.blue, bg = p.palette_dark.g0 },
+	RenderMarkdownH2Bg = { link = "RenderMarkdownH1Bg" },
+	RenderMarkdownH3Bg = { link = "RenderMarkdownH2Bg" },
+	RenderMarkdownH4Bg = { link = "RenderMarkdownH3Bg" },
+	RenderMarkdownH5Bg = { link = "RenderMarkdownH4Bg" },
+	RenderMarkdownH6Bg = { link = "RenderMarkdownH5Bg" },
 }
 
 function M.setup()
