@@ -60,8 +60,9 @@ print("Hello, World!")
 
 - [ ] Unchecked
 - [x] Checked
-- [-] Todo
-- [~] Test
+- [-] Canceled
+- [>] Active
+- [~] Testing
 
 ## Block Quotes
 
