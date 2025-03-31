@@ -24,7 +24,7 @@ M.highlights = {
 	NormalNC = { link = "Normal" },
 	Folded = { fg = p.black, bg = p.palette_light.g2 },
 	SignColumn = { fg = p.black },
-	Cursor = { reverse = true },
+	Cursor = { fg = p.orange, bg = p.white },
 	CursorColumn = { bg = p.white },
 	CursorLine = { link = "CursorColumn" },
 	CursorLineNr = { fg = p.white },
