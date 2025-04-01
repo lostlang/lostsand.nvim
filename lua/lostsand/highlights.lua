@@ -76,23 +76,23 @@ M.highlights = {
 	SpecialComment = { fg = p.light_blue } + styles.comments,
 	Todo = { fg = p.blue } + styles.comments,
 
-	-- lsp
+	-- diagnostic
 	DiagnosticError = { fg = p.red },
 	DiagnosticWarn = { fg = p.yellow },
 	DiagnosticHint = { fg = p.aqua },
 	DiagnosticInfo = { fg = p.blue },
-	DiagnosticSignError = { fg = p.red },
-	DiagnosticSignWarn = { fg = p.yellow },
-	DiagnosticSignHint = { fg = p.aqua },
-	DiagnosticSignInfo = { fg = p.blue },
-	DiagnosticVirtualTextError = { fg = p.red },
-	DiagnosticVirtualTextWarn = { fg = p.yellow },
-	DiagnosticVirtualTextHint = { fg = p.aqua },
-	DiagnosticVirtualTextInfo = { fg = p.blue },
-	DiagnosticUnderlineError = { fg = p.red },
-	DiagnosticUnderlineWarn = { fg = p.yellow },
-	DiagnosticUnderlineHint = { fg = p.aqua },
-	DiagnosticUnderlineInfo = { fg = p.blue },
+	DiagnosticSignError = { link = "DiagnosticError" },
+	DiagnosticSignWarn = { link = "DiagnosticWarn" },
+	DiagnosticSignHint = { link = "DiagnosticHint" },
+	DiagnosticSignInfo = { link = "DiagnosticInfo" },
+	DiagnosticVirtualTextError = { link = "DiagnosticError" },
+	DiagnosticVirtualTextWarn = { link = "DiagnosticWarn" },
+	DiagnosticVirtualTextHint = { link = "DiagnosticHint" },
+	DiagnosticVirtualTextInfo = { link = "DiagnosticInfo" },
+	DiagnosticUnderlineError = { link = "DiagnosticError" },
+	DiagnosticUnderlineWarn = { link = "DiagnosticWarn" },
+	DiagnosticUnderlineHint = { link = "DiagnosticHint" },
+	DiagnosticUnderlineInfo = { link = "DiagnosticInfo" },
 
 	-- treesitter
 	["@annotation"] = { link = "PreProc" },
@@ -263,6 +263,23 @@ M.highlights = {
 	RenderMarkdownH4Bg = { link = "RenderMarkdownH3Bg" },
 	RenderMarkdownH5Bg = { link = "RenderMarkdownH4Bg" },
 	RenderMarkdownH6Bg = { link = "RenderMarkdownH5Bg" },
+
+	-- notify
+	NotifyERRORBorder = { link = "DiagnosticError" },
+	NotifyERRORIcon = { link = "DiagnosticError" },
+	NotifyERRORTitle = { link = "DiagnosticError" },
+	NotifyWARNBorder = { link = "DiagnosticWarn" },
+	NotifyWARNIcon = { link = "DiagnosticWarn" },
+	NotifyWARNTitle = { link = "DiagnosticWarn" },
+	NotifyINFOBorder = { link = "DiagnosticInfo" },
+	NotifyINFOIcon = { link = "DiagnosticInfo" },
+	NotifyINFOTitle = { link = "DiagnosticInfo" },
+	NotifyDEBUGBorder = { link = "DiagnosticHint" },
+	NotifyDEBUGIcon = { link = "DiagnosticHint" },
+	NotifyDEBUGTitle = { link = "DiagnosticHint" },
+	NotifyTRACEBorder = { fg = p.purple },
+	NotifyTRACEIcon = { fg = p.purple },
+	NotifyTRACETitle = { fg = p.purple },
 }
 
 function M.setup()
